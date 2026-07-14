@@ -13,7 +13,7 @@
 
 Anyone who works extensively with the Windows registry knows how large it is and how much software product legacy is stored there. Uninstall tools find many of these keys, but often leave behind remnants of keys that don't contain the product name. Most registry programs only offer a cursory scan to shorten the user's waiting time.
 
-### Features:
+### :wrench: Features:
 
 * Find Keys
   * Keys

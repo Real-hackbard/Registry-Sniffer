@@ -92,7 +92,7 @@ Like other files and services in Windows, all registry keys may be restricted by
 
 ### Root Keys:
 
-* HKEY_LOCAL_MACHINE (HKLM)
+* ```HKEY_LOCAL_MACHINE (HKLM)```  
 Abbreviated HKLM, HKEY_LOCAL_MACHINE stores settings that are specific to the local computer.
 The key located by HKLM is actually not stored on disk, but maintained in memory by the system kernel in order to map all the other subkeys. Applications cannot create any additional subkeys. On Windows NT, this key contains four subkeys, "SAM", "SECURITY", "SYSTEM", and "SOFTWARE", that are loaded at boot time within their respective files located in the %SystemRoot%\System32\config\ folder. A fifth subkey, "HARDWARE", is volatile and is created dynamically, and as such is not stored in a file (it exposes a view of all the currently detected Plug-and-Play devices). On Windows Vista and above, a sixth and seventh subkey, "COMPONENTS" and "BCD", are mapped in memory by the kernel on-demand and loaded from %SystemRoot%\System32\config\COMPONENTS or from boot configuration data, \boot\BCD on the system partition.
 

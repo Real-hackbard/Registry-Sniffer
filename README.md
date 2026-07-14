@@ -121,7 +121,7 @@ In addition, Registry Jumper handles the custom "regjump://" protocol, which can
 * The Favorites list provides instant access to the most frequently used registry keys. You can organize and export it to HTML.
 Advanced 64-bit/32-bit registry handling on 64-bit Windows. The program automatically selects the existing 64-bit or 32-bit registry path or prompts the user if both paths are present.
 * The tool keeps a history of recently opened registry keys.
-* You can use the "regjump://" protocol handler provided by Registry Jumper to navigate to registry keys via hyperlinks directly from HTML pages. This allows you to maintain your registry favorites and tips in HTML format (see the sample page).
+* You can use the ```"regjump://"``` protocol handler provided by Registry Jumper to navigate to registry keys via hyperlinks directly from HTML pages. This allows you to maintain your registry favorites and tips in HTML format (see the sample page).
 * Supports both full and short root registry key names (e.g., HKLM = HKEY_LOCAL_MACHINE, full list below)
 Can open registry keys specified from the command line or via the clipboard.
 * Leading and trailing spaces, brackets, quotes, tabs, and double slashes are trimmed, so the registry paths like ['HKLM\\Software\Microsoft\Windows\CurrentVersion\Run'] are no problem.

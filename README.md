@@ -127,5 +127,66 @@ Can open registry keys specified from the command line or via the clipboard.
 * Leading and trailing spaces, brackets, quotes, tabs, and double slashes are trimmed, so the registry paths like ['HKLM\\Software\Microsoft\Windows\CurrentVersion\Run'] are no problem.
 * The executable has a small size (~ 0.2 MB) and low system requirements.
 
+# :speech_balloon: Code example
+```pascal
+// open & browse registry key in windows registry
+procedure TForm1.JumpToKey(Key: string);
+var
+  i, n: Integer;
+  hWin: HWND;
+  ExecInfo: ShellExecuteInfoA;
+begin
+  // locate the windows registry window handle
+  hWin := FindWindowA(PAnsiChar('RegEdit_RegEdit'), nil);
+  if hWin = 0 then
+  begin
+    // transferring information
+    FillChar(ExecInfo, 60, #0);
+    with ExecInfo do
+    begin
+      cbSize := 60;
+      // Keep process handle open
+      fMask := SEE_MASK_NOCLOSEPROCESS;
+      lpVerb := PAnsiChar('open');
+      lpFile := PAnsiChar('regedit.exe');
+      nShow := 1;
+    end;
+    // execute registry
+    ShellExecuteExA(@ExecInfo);
+    { is used to pause the execution of the current thread until a newly
+      started process has fully initialized and is idling, waiting for
+      user input. }
+    WaitForInputIdle(ExecInfo.hProcess, 200);
+    hWin := FindWindowA(PAnsiChar('RegEdit_RegEdit'), nil);
+  end;
+  // show and focus the registry window
+  ShowWindow(hWin, SW_SHOWNORMAL);
+  hWin := FindWindowExA(hWin, 0, PAnsiChar('SysTreeView32'), nil);
+  // stay registry windoe top
+  SetForegroundWindow(hWin);
+  i := 30;
+  repeat
+    SendMessageA(hWin, WM_KEYDOWN, VK_LEFT, 0);
+    Dec(i);
+  until i = 0;
 
+  // Wait a while to locate the path in the registry.
+  Sleep(150);
+  SendMessageA(hWin, WM_KEYDOWN, VK_RIGHT, 0);
+  Sleep(150);
+
+  i := 1;
+  n := Length(Key);
+  repeat
+    if Key[i] = '\' then
+    begin
+      SendMessageA(hWin, WM_KEYDOWN, VK_RIGHT, 0);
+      Sleep(150);
+    end
+    else
+      SendMessageA(hWin, WM_CHAR, Integer(Key[i]), 0);
+    i := i + 1;
+  until i = n;
+end;
+```
 

@@ -40,6 +40,7 @@ Anyone who works extensively with the Windows registry knows how large it is and
 <img src="https://github.com/user-attachments/assets/c66b48af-25b0-4d2a-9087-3e48dda91226" />
 
 </br>
+</br>
 
 
 The Windows Registry is a [hierarchical database](https://en.wikipedia.org/wiki/Hierarchical_database_model) that stores low-level settings for the Microsoft Windows operating system and for applications that opt to use the registry. [The kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system)), device drivers, services, Security Accounts Manager, and user interfaces can all use the registry. The registry also allows access to counters for profiling system performance.

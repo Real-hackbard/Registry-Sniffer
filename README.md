@@ -116,7 +116,7 @@ This key is used only in Windows 95, Windows 98 and Windows ME.[15] It contains 
 # Registry Jumper:
 Registry Jumper is a small utility that allows you to open the desired registry keys in Windows Regedit with a single click, making it easier to navigate the Windows registry.
 It can work in either GUI mode or command line mode, which opens the registry key specified as a command line parameter.
-In addition, Registry Jumper handles the custom "regjump://" protocol, which can be used, for example, in links in HTML pages to point to specific registry locations.
+In addition, Registry Jumper handles the custom ```"regjump://"``` protocol, which can be used, for example, in links in HTML pages to point to specific registry locations.
 
 * The Favorites list provides instant access to the most frequently used registry keys. You can organize and export it to HTML.
 Advanced 64-bit/32-bit registry handling on 64-bit Windows. The program automatically selects the existing 64-bit or 32-bit registry path or prompts the user if both paths are present.

@@ -11,11 +11,6 @@
 
 </br>
 
-
-
-
-
-
 Anyone who works extensively with the Windows registry knows how large it is and how much software product legacy is stored there. Uninstall tools find many of these keys, but often leave behind remnants of keys that don't contain the product name. Most registry programs only offer a cursory scan to shorten the user's waiting time.
 
 ### Features:
@@ -42,8 +37,7 @@ Anyone who works extensively with the Windows registry knows how large it is and
 
 </br>
 
-![Registry Sniffer](https://github.com/user-attachments/assets/866f40bb-6dd1-44ab-ac10-68b8a61bb7a1)
-
+<img src="https://github.com/user-attachments/assets/c66b48af-25b0-4d2a-9087-3e48dda91226" />
 
 </br>
 

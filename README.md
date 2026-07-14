@@ -127,7 +127,7 @@ Can open registry keys specified from the command line or via the clipboard.
 * Leading and trailing spaces, brackets, quotes, tabs, and double slashes are trimmed, so the registry paths like ['HKLM\\Software\Microsoft\Windows\CurrentVersion\Run'] are no problem.
 * The executable has a small size (~ 0.2 MB) and low system requirements.
 
-# :speech_balloon: Code example Registry Jumper
+### :speech_balloon: Code example Registry Jumper
 ```pascal
 // open & browse registry key in windows registry
 procedure TForm1.JumpToKey(Key: string);

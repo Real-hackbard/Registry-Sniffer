@@ -113,7 +113,7 @@ On Windows NT systems, each user's settings are stored in their own files called
 This key is used only in Windows 95, Windows 98 and Windows ME.[15] It contains information about hardware devices, including Plug and Play and network performance statistics. The information in this hive is also not stored on the hard drive; the Plug and Play information is gathered and configured at startup and is stored in memory.
 
 
-### Registry Jumper:
+# Registry Jumper:
 Registry Jumper is a small utility that allows you to open the desired registry keys in Windows Regedit with a single click, making it easier to navigate the Windows registry.
 It can work in either GUI mode or command line mode, which opens the registry key specified as a command line parameter.
 In addition, Registry Jumper handles the custom "regjump://" protocol, which can be used, for example, in links in HTML pages to point to specific registry locations.
@@ -127,7 +127,7 @@ Can open registry keys specified from the command line or via the clipboard.
 * Leading and trailing spaces, brackets, quotes, tabs, and double slashes are trimmed, so the registry paths like ['HKLM\\Software\Microsoft\Windows\CurrentVersion\Run'] are no problem.
 * The executable has a small size (~ 0.2 MB) and low system requirements.
 
-# :speech_balloon: Code example
+# :speech_balloon: Code example Registry Jumper
 ```pascal
 // open & browse registry key in windows registry
 procedure TForm1.JumpToKey(Key: string);

@@ -67,7 +67,7 @@ There are seven predefined root keys, traditionally named according to their con
 * ```HKEY_PERFORMANCE_DATA``` (only in Windows NT, but invisible in the Windows Registry Editor)
 * ```HKEY_DYN_DATA``` (only in Windows 9x, and visible in the Windows Registry Editor)
 
-Like other files and services in Windows, all registry keys may be restricted by access control lists (ACLs), depending on user privileges, or on security tokens acquired by applications, or on system security policies enforced by the system (these restrictions may be predefined by the system itself, and configured by local system administrators or by domain administrators). Different users, programs, services or remote systems may only see some parts of the hierarchy or distinct hierarchies from the same root keys.
+Like other files and services in Windows, all registry keys may be restricted by access control lists ([ACLs](https://en.wikipedia.org/wiki/Access-control_list)), depending on user privileges, or on security tokens acquired by applications, or on system security policies enforced by the system (these restrictions may be predefined by the system itself, and configured by local system administrators or by domain administrators). Different users, programs, services or remote systems may only see some parts of the hierarchy or distinct hierarchies from the same root keys.
 
 </br>
 
